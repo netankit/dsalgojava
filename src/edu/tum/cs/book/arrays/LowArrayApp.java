@@ -16,7 +16,7 @@ public class LowArrayApp {
 
 		// Display Array after insertion
 		for (i = 0; i < numElements; i++) {
-			System.out.println(arr.getValue(i));
+			System.out.print(arr.getValue(i) + " ");
 		}
 
 		// Searching in Array
@@ -48,7 +48,7 @@ public class LowArrayApp {
 
 		// Display Array after Deletion
 		for (i = 0; i < numElements; i++) {
-			System.out.println(arr.getValue(i));
+			System.out.print(arr.getValue(i) + " ");
 		}
 	}
 }
