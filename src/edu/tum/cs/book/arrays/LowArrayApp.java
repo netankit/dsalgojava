@@ -1,5 +1,5 @@
 package edu.tum.cs.book.arrays;
-
+//Implementation of lowArray - Needs Improvement. For Higher Version refer to highArray.
 public class LowArrayApp {
 	public static void main(String args[]) {
 		LowArray arr;
