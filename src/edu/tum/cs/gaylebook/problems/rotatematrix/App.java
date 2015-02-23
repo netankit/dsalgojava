@@ -10,15 +10,17 @@ public class App {
 
 	public static void main(String[] args) {
 		int inputSize = 3;
-		int[][] inputmatrix = new int[inputSize][inputSize];
+		// int[][] inputmatrix = new int[inputSize][inputSize];
+		int[][] inputmatrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 
 		int outputMatrix[][] = rotateMatrixInplace(inputmatrix, inputSize);
 
 		for (int i = 0; i < inputSize; i++) {
 			for (int j = 0; j < inputSize; j++) {
 				System.out.print(outputMatrix[i][j] + " ");
-				System.out.println();
 			}
+			System.out.println();
+
 		}
 
 	}
