@@ -2,8 +2,8 @@ package edu.tum.cs.essentials.linkedlist;
 
 //Sample Implementation for Single Linked List in Java
 public class Node {
-	Node next = null;
-	int data;
+	public Node next = null;
+	public int data;
 
 	// initializing constructor.
 	public Node(int d) {
@@ -11,7 +11,7 @@ public class Node {
 	}
 
 	// Appending to the Tail of a linked list
-	void appendToTail(int d) {
+	public void appendToTail(int d) {
 
 		Node end = new Node(d);
 		Node n = this;
@@ -21,7 +21,7 @@ public class Node {
 		n.next = end;
 	}
 
-	Node deleteNode(Node head, int d) {
+	public Node deleteNode(Node head, int d) {
 		Node n = head;
 
 		if (n.data == d) {
