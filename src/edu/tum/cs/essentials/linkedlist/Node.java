@@ -2,12 +2,13 @@ package edu.tum.cs.essentials.linkedlist;
 
 //Sample Implementation for Single Linked List in Java
 public class Node {
-	public Node next = null;
+	public Node next;
 	public int data;
 
 	// initializing constructor.
 	public Node(int d) {
 		data = d;
+		next = null;
 	}
 
 	// Appending to the Tail of a linked list
