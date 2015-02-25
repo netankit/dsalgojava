@@ -3,29 +3,34 @@ package edu.tum.cs.gaylebook.problems.llsum;
 import edu.tum.cs.essentials.linkedlist.Node;
 
 //LinkedList
-// 7 -> 1 -> 6
-// 5 -> 9 -> 2
+// 7 -> 1 -> 6 -> 6 [6617]
+// 5 -> 9 -> 2 [295]
 
 // Sum:
-// 2 -> 1-> 9
+// 2 -> 1-> 9 -> 6 [6912]
 
 public class App {
 
 	public static void main(String args[]) {
+
 		Node num1 = new Node(0);
+		// 7 -> 1 -> 6 -> 6 [6617]
 		num1.appendToTail(7);
 		num1.appendToTail(1);
 		num1.appendToTail(6);
+		num1.appendToTail(6);
 
 		Node num2 = new Node(0);
+		// 5 -> 9 -> 2 [295]
 		num2.appendToTail(5);
 		num2.appendToTail(9);
 		num2.appendToTail(2);
 		Node output = sumLL(num1.next, num2.next);
+
 		// Key Learning : Note how the linked list is printed, we check for the
 		// node being null or not and increment next pointer
 		while (output != null) {
-			System.out.println(output.data);
+			System.out.print(output.data + " ");
 			output = output.next;
 		}
 
