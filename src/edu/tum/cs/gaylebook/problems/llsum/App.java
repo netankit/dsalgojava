@@ -1,6 +1,6 @@
 package edu.tum.cs.gaylebook.problems.llsum;
 
-import edu.tum.cs.essentials.linkedlist.LinkedListNode;
+import edu.tum.cs.essentials.LinkedListNode;
 
 //LinkedList
 // 7 -> 1 -> 6 -> 6 [6617]

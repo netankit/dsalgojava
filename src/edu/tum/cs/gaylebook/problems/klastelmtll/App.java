@@ -1,6 +1,6 @@
 package edu.tum.cs.gaylebook.problems.klastelmtll;
 
-import edu.tum.cs.essentials.linkedlist.LinkedListNode;
+import edu.tum.cs.essentials.LinkedListNode;
 
 // Implement an algorithm to find the kth to last element of a singly linked list.
 public class App {

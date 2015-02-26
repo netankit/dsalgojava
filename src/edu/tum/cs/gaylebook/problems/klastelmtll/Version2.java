@@ -1,6 +1,6 @@
 package edu.tum.cs.gaylebook.problems.klastelmtll;
 
-import edu.tum.cs.essentials.linkedlist.LinkedListNode;
+import edu.tum.cs.essentials.LinkedListNode;
 
 //Exploring an iterative solution
 public class Version2 {

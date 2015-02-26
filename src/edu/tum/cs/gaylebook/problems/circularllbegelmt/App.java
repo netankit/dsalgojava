@@ -1,6 +1,6 @@
 package edu.tum.cs.gaylebook.problems.circularllbegelmt;
 
-import edu.tum.cs.essentials.linkedlist.LinkedListNode;
+import edu.tum.cs.essentials.LinkedListNode;
 
 //Given a circular linked list, implement an algorithm which returns the node at the
 // beginning of the loop.

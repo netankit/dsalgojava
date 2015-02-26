@@ -1,6 +1,6 @@
 package edu.tum.cs.gaylebook.problems.deletenode;
 
-import edu.tum.cs.essentials.linkedlist.LinkedListNode;
+import edu.tum.cs.essentials.LinkedListNode;
 
 //Implement an algorithm to delete a node in the middle of a singly linked list, given
 //only access to that node.

@@ -1,4 +1,4 @@
-package edu.tum.cs.essentials.linkedlist;
+package edu.tum.cs.essentials;
 
 public class Stack {
 

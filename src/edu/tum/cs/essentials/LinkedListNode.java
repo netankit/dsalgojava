@@ -1,4 +1,4 @@
-package edu.tum.cs.essentials.linkedlist;
+package edu.tum.cs.essentials;
 
 //Sample Implementation for Single Linked List in Java
 public class LinkedListNode {

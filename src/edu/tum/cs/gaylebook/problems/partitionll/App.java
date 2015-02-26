@@ -1,6 +1,6 @@
 package edu.tum.cs.gaylebook.problems.partitionll;
 
-import edu.tum.cs.essentials.linkedlist.LinkedListNode;
+import edu.tum.cs.essentials.LinkedListNode;
 
 // Write code to partition a linked list around a value x, such that all
 // nodes less than come before all nodes greater than or equal to x.
