@@ -1,6 +1,6 @@
 package edu.tum.cs.gaylebook.problems.partitionll;
 
-import edu.tum.cs.essentials.linkedlist.Node;
+import edu.tum.cs.essentials.linkedlist.LinkedListNode;
 
 // Write code to partition a linked list around a value x, such that all
 // nodes less than come before all nodes greater than or equal to x.
@@ -9,7 +9,7 @@ public class App {
 
 	public static void main(String[] args) {
 
-		Node listIn = new Node(1);
+		LinkedListNode listIn = new LinkedListNode(1);
 
 		listIn.appendToTail(7);
 		listIn.appendToTail(8);
@@ -26,7 +26,7 @@ public class App {
 		}
 
 		int x = 4;
-		Node output = partition(listIn, x);
+		LinkedListNode output = partition(listIn, x);
 		System.out.println("Output: ");
 		while (output.next != null) {
 			System.out.print(output.data + " ");
@@ -35,14 +35,14 @@ public class App {
 
 	}
 
-	private static Node partition(Node listIn, int x) {
+	private static LinkedListNode partition(LinkedListNode listIn, int x) {
 		// TODO Auto-generated method stub
 
-		Node beforeStart = null;
-		Node afterStart = null;
+		LinkedListNode beforeStart = null;
+		LinkedListNode afterStart = null;
 
 		while (listIn != null) {
-			Node next = listIn.next;
+			LinkedListNode next = listIn.next;
 			if (listIn.data < x) {
 				listIn.next = beforeStart;
 				beforeStart = listIn;
@@ -59,7 +59,7 @@ public class App {
 			return afterStart;
 		}
 
-		Node head = beforeStart;
+		LinkedListNode head = beforeStart;
 
 		while (beforeStart.next != null) {
 			beforeStart = beforeStart.next;

@@ -1,29 +1,35 @@
 package edu.tum.cs.essentials.linkedlist;
 
 //Sample Implementation for Single Linked List in Java
-public class Node {
-	public Node next;
+public class LinkedListNode {
+	public LinkedListNode next;
 	public int data;
+	public Object dataObj;
 
 	// initializing constructor.
-	public Node(int d) {
-		data = d;
+	public LinkedListNode(int item) {
+		data = item;
+		next = null;
+	}
+
+	public LinkedListNode(Object item) {
+		dataObj = item;
 		next = null;
 	}
 
 	// Appending to the Tail of a linked list
 	public void appendToTail(int d) {
 
-		Node end = new Node(d);
-		Node n = this;
+		LinkedListNode end = new LinkedListNode(d);
+		LinkedListNode n = this;
 		while (n.next != null) {
 			n = n.next;
 		}
 		n.next = end;
 	}
 
-	public Node deleteNode(Node head, int d) {
-		Node n = head;
+	public LinkedListNode deleteNode(LinkedListNode head, int d) {
+		LinkedListNode n = head;
 
 		if (n.data == d) {
 			return head.next; /* moved head */

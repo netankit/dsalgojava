@@ -1,13 +1,13 @@
 package edu.tum.cs.gaylebook.problems.klastelmtll;
 
-import edu.tum.cs.essentials.linkedlist.Node;
+import edu.tum.cs.essentials.linkedlist.LinkedListNode;
 
 // Implement an algorithm to find the kth to last element of a singly linked list.
 public class App {
 
 	public static void main(String[] args) {
 
-		Node listIn = new Node(1);
+		LinkedListNode listIn = new LinkedListNode(1);
 
 		for (int i = 2; i <= 9; i++) {
 			listIn.appendToTail(i);
@@ -18,10 +18,10 @@ public class App {
 		// System.out.println(output);
 	}
 
-	private static int kthToLastElement(Node listIn, int k) {
+	private static int kthToLastElement(LinkedListNode listIn, int k) {
 		// TODO Auto-generated method stub
 
-		Node head = listIn;
+		LinkedListNode head = listIn;
 
 		if (head == null) {
 			return 0;

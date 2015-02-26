@@ -1,6 +1,6 @@
 package edu.tum.cs.gaylebook.problems.deletenode;
 
-import edu.tum.cs.essentials.linkedlist.Node;
+import edu.tum.cs.essentials.linkedlist.LinkedListNode;
 
 //Implement an algorithm to delete a node in the middle of a singly linked list, given
 //only access to that node.
@@ -10,7 +10,7 @@ public class App {
 
 	public static void main(String[] args) {
 
-		Node listIn = new Node(1);
+		LinkedListNode listIn = new LinkedListNode(1);
 
 		for (int i = 2; i <= 9; i++) {
 			listIn.appendToTail(i);
@@ -22,7 +22,7 @@ public class App {
 
 	}
 
-	private static boolean deleteNode(Node listIn) {
+	private static boolean deleteNode(LinkedListNode listIn) {
 		// TODO Auto-generated method stub
 
 		if (listIn == null || listIn.next == null)

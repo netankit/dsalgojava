@@ -1,14 +1,14 @@
 package edu.tum.cs.gaylebook.problems.circularllbegelmt;
 
-import edu.tum.cs.essentials.linkedlist.Node;
+import edu.tum.cs.essentials.linkedlist.LinkedListNode;
 
 //Given a circular linked list, implement an algorithm which returns the node at the
 // beginning of the loop.
 
 public class App {
-	Node FindBeginning(Node head) {
-		Node slow = head;
-		Node fast = head;
+	LinkedListNode FindBeginning(LinkedListNode head) {
+		LinkedListNode slow = head;
+		LinkedListNode fast = head;
 
 		/*
 		 * Find meeting point. This will be LOOP_SIZE - k steps into the linked

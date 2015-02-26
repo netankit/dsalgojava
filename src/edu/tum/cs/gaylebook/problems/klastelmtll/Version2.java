@@ -1,30 +1,30 @@
 package edu.tum.cs.gaylebook.problems.klastelmtll;
 
-import edu.tum.cs.essentials.linkedlist.Node;
+import edu.tum.cs.essentials.linkedlist.LinkedListNode;
 
 //Exploring an iterative solution
 public class Version2 {
 	public static void main(String[] args) {
 
-		Node listIn = new Node(1);
+		LinkedListNode listIn = new LinkedListNode(1);
 
 		for (int i = 2; i <= 9; i++) {
 			listIn.appendToTail(i);
 		}
 
 		int k = 3;
-		Node output = kthToLastElement(listIn, k);
+		LinkedListNode output = kthToLastElement(listIn, k);
 		System.out.println(output.data);
 
 	}
 
-	private static Node kthToLastElement(Node listIn, int k) {
+	private static LinkedListNode kthToLastElement(LinkedListNode listIn, int k) {
 		if (k <= 0)
 			return null;
 
-		Node head = listIn;
-		Node p1 = head;
-		Node p2 = head;
+		LinkedListNode head = listIn;
+		LinkedListNode p1 = head;
+		LinkedListNode p2 = head;
 
 		// move p2 forward k positions
 		for (int i = 0; i < k - 1; i++) {
