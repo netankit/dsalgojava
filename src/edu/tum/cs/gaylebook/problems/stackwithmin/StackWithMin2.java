@@ -1,6 +1,6 @@
 package edu.tum.cs.gaylebook.problems.stackwithmin;
 
-import edu.tum.cs.essentials.Stack;
+import java.util.Stack;
 
 /*
  * 
@@ -10,26 +10,42 @@ import edu.tum.cs.essentials.Stack;
  * 
  */
 
-public class StackWithMin2 extends Stack {
+public class StackWithMin2 extends Stack<Integer> {
 
-	Stack s2;
+	private static final long serialVersionUID = 1L;
+	Stack<Integer> s2;
 
+	// S2 is a new stack which holds the minimum element
 	public StackWithMin2() {
-		s2 = new Stack();
+		s2 = new Stack<Integer>();
 	}
 
-	public void push() {
+	// On a simple push to the super stack, the s2 also gets populated when we
+	// compare the current element with the current minimum element of the
+	// stack; For this we invoke min() which performs a peek on the top element.
+	public void push(int value) {
+		if (value <= min()) {
+			s2.push(value);
+		}
+		super.push(value);
 
 	}
 
-	public Object pop() {
-
-		return null;
+	@Override
+	public Integer pop() {
+		int value = super.pop();
+		if (value == min()) {
+			s2.pop();
+		}
+		return value;
 	}
 
 	public int min() {
+		if (s2.isEmpty()) {
+			return Integer.MAX_VALUE;
+		} else {
+			return s2.peek();
+		}
 
-		return 0;
 	}
-
 }
