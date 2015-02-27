@@ -37,7 +37,7 @@ public class MyQueue<T> {
 	// Dequeue -- pop out top element of the old stack
 	public T remove() {
 		shiftStacks();
-		return stackold.pop();
+		return stackOld.pop();
 	}
 
 	public int size() {
