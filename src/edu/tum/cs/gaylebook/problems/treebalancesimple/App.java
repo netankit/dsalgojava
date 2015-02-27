@@ -10,6 +10,8 @@ import edu.tum.cs.essentials.TreeNode;
  Time: O(N)
  Space: O(H); H is the height of the tree
  */
+
+//Trick is the return statement which returns -1 whenever a subtree is found to be unbalanced.
 public class App {
 	public static int checkHeight(TreeNode root) {
 		if (root == null) {
