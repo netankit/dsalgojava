@@ -1,5 +1,5 @@
 package edu.tum.cs.essentials;
-
+// Tree Node
 public class TreeNode {
 	public TreeNode(int i) {
 		// TODO Auto-generated constructor stub
