@@ -1,4 +1,4 @@
-//LowArray Implemtentation
+//Low Array Implemtentation
 package edu.tum.cs.book.arrays;
 
 public class LowArray {
