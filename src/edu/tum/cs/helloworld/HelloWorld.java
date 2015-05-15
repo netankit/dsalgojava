@@ -1,5 +1,5 @@
 package edu.tum.cs.helloworld;
-//HelloWorld
+//Hello World
 public class HelloWorld {
 
 	public static void main(String[] args) {
