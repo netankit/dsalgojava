@@ -1,5 +1,7 @@
 package edu.tum.cs.essentials;
-
+/**
+ * Queue Class
+ */
 public class Queue {
 
 	LinkedListNode first, last;
